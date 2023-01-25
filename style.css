@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans:ital,wght@0,900;1,900&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin:0;
+}
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%; 
+    
+}
+
+ .imagen{
+   width:100%;
+   filter: grayscale(100);
+   overflow: content-box;
+   left:500px;
+   margin-top: 100px;
+   margin:100px;
+}
+.collapse{
+   flex-direction: row-reverse;
+   font-family: 'Dancing Script', cursive;
+}
+.title{
+    color:black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    right:150px;
+    position: absolute;
+    margin-top:-700px;
+    
+    
+    
+}
+.fondo{
+    background-color:rgb(241, 237, 237);
+   
+}
+
+.main{
+    margin: auto;
+    width: 90%;
+    max-width: 9000px;
+    display: grid;
+    position: absolute;
+ }
+.main__contact{
+    padding: 10px; 
+    margin: 10px;
+    float: right; 
+    width:50%;   
+}
+
+.main__form{
+    display: grid;
+    gap: 1.5em;
+    position: absolute;
+    margin-top:-600px;
+    right: 40px;
+    
+}
+.main__input{
+    width: 80%;
+    max-width: 400px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+    cursor: pointer;
+    
+}
+.main__input--send{
+    background:grey ;  
+    color:white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main__input--send:hover {
+    background:rgb(63, 58, 58);
+    cursor: pointer;
+}
+.warnings{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    color:red;
+    padding-top: 20px;
+    font-weight: 900;
+}
+#enviado{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    color:#20843e;
+    padding-top: 20px;
+    font-weight: 900;
+}
+.hidden{
+    display: none;
+}
+
+.grupo__terminos{
+    color:black;
+    text-align: center;
+}
+#terminos{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+   
+}
+
+@media (min-width:900px) {
+    #cuerpo {
+        padding-top: 5%;
+    }
+    .float-end{
+        margin-right: 87%;
+    }
+}
