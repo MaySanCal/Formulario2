@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <script src="https://use.fontawesome.com/your-embed-code.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fondo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cristina Maser</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">¡CALENDARIO!</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BODAS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">PRESUPUESTO</a></li>
+                                <li><a class="dropdown-item" href="#">Invitaciones de Boda</a></li>
+                                <li><a class="dropdown-item" href="#">Papelería de Bodas</a></li>
+                                <li><a class="dropdown-item" href="#">Mapas de Bodas</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                LÁMINAS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Láminas botánicas</a></li>
+                                <li><a class="dropdown-item" href="#">Láminas de nacimiento</a></li>
+                                <li><a class="dropdown-item" href="#">Láminas personalizadas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PAPELERÍA
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Planificadores</a></li>
+                                <li><a class="dropdown-item" href="#">Cuadernos</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CURSOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="cuerpo">
+        <section class="main">
+            <div class="main__contact">
+                <div class="imagen-container">
+                    <img src="/imagen/bosque.jpeg" width="600px" height="500'px">
+                </div>
+                
+                <h1 class ="title">Regístrate</h1>
+                <form class="main__form" id="main__form" method="POST">
+                    <input id="nombre" type="text" placeholder="Nombre de usuario" class="main__input">
+                    <input id="email" type="email" placeholder="email@ejemplo.com" class="main__input">
+                    <input id="contraseña" type="password" placeholder="Contraseña" class="main__input">
+                    <input id="confirma-contraseña" type="password" placeholder="Confirma contraseña"
+                        class="main__input">
+
+
+                    <input id="sendbtn" type="submit" value="Enviar" class="main__input main__input--send">
+
+                    <div class="grupo__terminos" id="grupo__condiciones">
+                        <label class="formulario__label">
+                            <input class="formulario__chekbox" type="checkbox" name="terminos" id="terminos">
+                            <strong>Acepto los</strong> <a href="https://policies.google.com/terms?hl=es"
+                                id="terminos"><strong><u>Términos y
+                                        condiciones</u></strong></a>
+                        </label>
+                    </div>
+                    <p class="warnings" id="warnings"></p>
+                    <p class="enviado" id="enviado"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
